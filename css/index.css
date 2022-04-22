@@ -1,0 +1,222 @@
+@font-face {
+    font-family: 'Gotham Medium';
+    src: url('Gotham-Book.woff2') format('woff2'),
+        url('Gotham-Book.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('Gotham-Medium.woff2') format('woff2'),
+        url('Gotham-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gotham Medium';
+}
+
+p,
+span,
+li,
+a {
+    font-family: 'Gotham Book';
+}
+
+.logo {
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+.nav2 {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: 550;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#slide1 {
+    background-image: url('../image/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#slide2 {
+    background-image: url('../image/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#slide3 {
+    background-image: url('../image/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#slide4 {
+    background-image: url('../image/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.upper {
+    padding-top: 110px;
+}
+
+.upper h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.upper p,
+.upper p a {
+    font-weight: 300;
+    color: black;
+    font-size: 14px;
+}
+
+.lower {
+    position: absolute;
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.lower .index_btn1 {
+    font-size: 12px;
+    text-decoration: none;
+    color: white;
+    background: rgba(23, 26, 32, 0.8);
+    padding: 11px 93px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 80px;
+    left: 440px;
+
+}
+
+.lower .index_btn2 {
+    font-size: 12px;
+    text-decoration: none;
+    color: #393c41;
+    background: rgba(244, 244, 244, 0.65);
+    padding: 11px 93px;
+    border-radius: 50px;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 80px;
+    right: 440px;
+}
+
+.lower .arrow {
+    padding-top: 36px;
+}
+
+.lower p,
+.lower p a {
+    color: black;
+    font-size: 12px;
+
+}
+
+.lower p a {
+    color: black;
+}
+
+.upper h2,
+.upper p,
+.lower .index_btn1,
+.lower .index_btn2,
+.lower .arrow {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* rwd action_btn */
+.lower .action_btn1_rwd,
+.lower .action_btn2_rwd {
+    display: none;
+}
+
+@media screen and (max-width:990px) {
+    .logo_rwd {
+        position: absolute;
+        left: auto;
+        right: 20px;
+    }
+
+    .navbar {
+        background-color: white;
+    }
+
+    .nav2 {
+        position: relative;
+        top: 0px;
+        right: auto;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .lower .index_btn1,
+    .lower .index_btn2 {
+        display: none;
+    }
+
+    .lower .action_btn1_rwd {
+        font-size: 12px;
+        text-decoration: none;
+        color: white;
+        background: rgba(23, 26, 32, 0.8);
+        padding: 12px 92px;
+        border-radius: 50px;
+        margin: 0px 7%;
+    }
+
+    .lower .action_btn2_rwd {
+        font-size: 12px;
+        text-decoration: none;
+        color: #393c41;
+        background: rgba(244, 244, 244, 0.65);
+        padding: 12px 90px;
+        border-radius: 50px;
+        margin: 0px 7%;
+        margin-top: 16px;
+    }
+
+    .lower .action_btn1_rwd,
+    .lower .action_btn2_rwd {
+        display: block;
+        visibility: hidden;
+    }
+}
