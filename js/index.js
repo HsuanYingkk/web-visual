@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             fullpage_api.moveSectionDown();
         });
     }
+    // 動畫
     var loaging = new TimelineMax();
     loaging.fromTo(".upper h2", 0.8, { autoAlpha: 0, y: 50 }, { autoAlpha: 1, y: 0 })
         .fromTo(".upper p", 0.8, { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0 })
