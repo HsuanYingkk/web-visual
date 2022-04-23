@@ -1,7 +1,9 @@
 new fullpage('#fullpage', {
-    //options here
     autoScrolling: true,
     scrollHorizontally: true,
+    anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+    menu: '#menu',
+    continuousVertical: true,
     onLeave: function (origin, destination, direction, trigger) {
         var loaging2 = new TimelineMax();
         loaging2.fromTo(".upper", 0.6, { autoAlpha: 0 }, { autoAlpha: 1 }, "+=0.5")
@@ -10,7 +12,7 @@ new fullpage('#fullpage', {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    //click function
+    //箭頭click function
     var arrows = document.getElementsByClassName('arrow1');
     for (i = 0; i < arrows.length; i++) {
         arrows[i].addEventListener('click', function (e) {
